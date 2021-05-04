@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import data from '../students.json'
 import StudentDetail from './StudentDetail'
 
-export default function Students() {
+function Students() {
 
     const [students, updateStudents] = useState(data)
 
@@ -76,8 +76,9 @@ export default function Students() {
                                 />
                     })
                 }
-            </>
+        </>
     )
 }
 
+export default Students
 
